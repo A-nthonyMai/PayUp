@@ -13,7 +13,7 @@ const Footer = () => {
                     additionalCSS="ml-2"
                 />
                 <SocialButton
-                    pathToIcon="/icons/gitHub-icon.svg"
+                    pathToIcon="/icons/github-icon.svg"
                     link="https://www.github.com/a-nthonymai/pay-up"
                     additionalCSS="ml-2"
                 />
