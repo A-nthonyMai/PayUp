@@ -1,20 +1,27 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const Header = () => {
+type HeaderProps = {
+    title: string
+}
+
+const Header = ({ title }: HeaderProps) => {
     return (
         <div className="bg-don-juan-purple h-16 shadow-2xl">
-            <div className="w-48 h-16 mx-2 sm:ml-[25%]">
-                <Link href="https://anto.au">
+            <div className="w-fit h-16 mx-2 sm:ml-[25%]">
+
+                <div className="flex flex-row items-center">
                     <div className="w-16 h-16 relative">
-                        <Image className="rounded-full" src="/images/anthony-mai-icon.png" alt="Photo of Anthony Mai" fill />
-                        <div className="ml-16 text-4xl pt-7">
-                            Anto
-                        </div>
+                        <Link href="https://anto.au">
+                            <Image className="rounded-full" src="/images/anthony-mai-icon.png" alt="Photo of Anthony Mai" fill />
+                        </Link>
                     </div>
-                </Link>
+                    <div className="ml-2 text-5xl">
+                        {title}
+                    </div>
+                </div>
             </div>
-        </div>
+        </div >
     )
 }
 
