@@ -1,10 +1,9 @@
-import Link from "next/link"
 import SocialButton from "./socialButton"
 
-const Footer = () => {
+export default function Footer() {
     return (
-        <div className="bg-dark-purple mt-auto h-12 flex items-center justify-center text-xl">
-            <p className="mr-2">Created by <Link className="hover:underline" href="https://anto.au">Anthony Mai</Link></p>
+        <div className="bg-dark-purple mt-auto h-12 flex items-center justify-center text-md">
+            <p className="mr-2">Created by Anthony Mai</p>
             <div className="flex flex-row border-l-2 border-thistle-purple">
                 <SocialButton
                     pathToIcon="/icons/web-icon.svg"
@@ -25,5 +24,3 @@ const Footer = () => {
         </div>
     )
 }
-
-export default Footer

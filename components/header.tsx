@@ -5,7 +5,7 @@ type HeaderProps = {
     title: string
 }
 
-const Header = ({ title }: HeaderProps) => {
+export default function Header({ title }: HeaderProps) {
     return (
         <div className="bg-jazzberry-jam h-16">
             <div className="w-fit h-16 mx-2 sm:ml-[25%]">
@@ -15,13 +15,11 @@ const Header = ({ title }: HeaderProps) => {
                             <Image className="rounded-full" src="/images/anthony-mai-icon.png" alt="Photo of Anthony Mai" fill />
                         </Link>
                     </div>
-                    <div className="ml-2 text-5xl">
-                        {title}
+                    <div>
+                        <p className="ml-2 text-5xl font-extrabold text-lavender-purple">{title}</p>
                     </div>
                 </div>
             </div>
         </div >
     )
 }
-
-export default Header

@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <>
             <Head>
@@ -12,5 +12,3 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </>
     )
 }
-
-export default Layout
