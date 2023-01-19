@@ -7,9 +7,8 @@ type HeaderProps = {
 
 const Header = ({ title }: HeaderProps) => {
     return (
-        <div className="bg-don-juan-purple h-16 shadow-2xl">
+        <div className="bg-jazzberry-jam h-16">
             <div className="w-fit h-16 mx-2 sm:ml-[25%]">
-
                 <div className="flex flex-row items-center">
                     <div className="w-16 h-16 relative">
                         <Link href="https://anto.au">

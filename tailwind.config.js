@@ -7,12 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'deep-purple': '#463145',
-        'thunder-purple': '#312231',
-        'don-juan-purple': '#594659',
+        'xiketic-purple': '#241924',
+        'dark-purple': '#251825',
+        'dark-purple2': '#3E283E',
+        'jazzberry-jam': '#961D4E',
+        'english-violet': '#573857',
+        'black-purple': '#0C080C'
       },
       textColor: {
-        'bon-jour-purple': '#EDEAED'
+        'thistle-purple': '#D7C1D7'
       },
     },
   },
